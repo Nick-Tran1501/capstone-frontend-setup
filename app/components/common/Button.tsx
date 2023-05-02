@@ -5,7 +5,7 @@ import { SizeType } from 'antd/es/config-provider/SizeContext';
 
 type Props = {
   type?:
-    | 'link'
+    | 'link' 
     | 'text'
     | 'ghost'
     | 'default'
