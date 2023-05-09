@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,6 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "noUnusedParameters": true,
+    "allowImportingTsExtensions": true,
     "noImplicitAny": true,
     "plugins": [
       {

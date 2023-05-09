@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { CSSProperties } from 'react'
 import { Button } from 'antd'
 import { SizeType } from 'antd/es/config-provider/SizeContext';
 
@@ -12,14 +12,17 @@ type Props = {
     | 'primary'
     | 'dashed'
     | undefined;
-  size: SizeType;
-  onClickFunction: () => void;
+  size?: SizeType;
+  onClickFunction?: () => void;
   children: React.ReactNode;
+  href?: string;
+  target?: string;
+  style?: CSSProperties;
 };
 
-const CustomButton: React.FC <Props> = ({type, size,onClickFunction,children}) => {
+const CustomButton: React.FC <Props> = ({type, size,onClickFunction,children, href,target, style}) => {
   return (
-    <Button type={type} size={size} onClick={onClickFunction}>{children}</Button>
+    <Button type={type} size={size} onClick={onClickFunction} href={href} target={target} style={style}>{children}</Button>
   )
 }
 
